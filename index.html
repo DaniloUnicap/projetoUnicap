@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashZada</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-nav">
+                <div class="logo">Dash.io</div>
+                <div><img src="icons/inicio.svg" alt=""></div>
+                <div><img src="icons/dashboard.svg" alt=""></div>
+                <div><img src="icons/comparar.svg" alt=""></div>
+            </div>
+            
+            <div><img src="icons/config.svg" alt=""></div>
+        </nav>
+
+        <div class="header-main">
+            <header>
+                <div class="icon-dash">
+                    <span>DASHBOARD</span>
+                </div>
+
+                <input type="text" placeholder="Manda a tua ideia noiado" id="pesquisa">
+
+                <select id="opcoes" name="opcaoEscolhida">
+                    <option value="filtrar">Filtrar</option>
+                    <option value="opcao1">Opção 1</option>
+                    <option value="opcao2">Opção 2</option>
+                    <option value="opcao3">Opção 3</option>
+                </select>
+
+            </header>
+
+            <main class="main-content">
+                <section class="dados">
+                    <div class="box-dados">
+                        <div class="icons-dados">
+                            <img src="icons/home.svg" alt="home" class="icon-home">
+                            <img src="icons/menu.svg" alt="home" class="icon-dots">
+                        </div>
+                        <div class="infos-p">
+                            <p class="p-valor">1.102</p>
+                            <p class="p-text">Escolas cadastradas</p>
+                        </div>
+                    </div>
+                    <div class="box-dados">
+                        <div class="icons-dados">
+                            <img src="icons/home.svg" alt="home" class="icon-home">
+                            <img src="icons/menu.svg" alt="home" class="icon-dots">
+                        </div>
+                        <div class="infos-p">
+                            <p class="p-valor">1.102</p>
+                            <p class="p-text">Escolas cadastradas</p>
+                        </div>
+                    </div>
+                    <div class="box-dados">
+                        <div class="icons-dados">
+                            <img src="icons/home.svg" alt="home" class="icon-home">
+                            <img src="icons/menu.svg" alt="home" class="icon-dots">
+                        </div>
+                        <div class="infos-p">
+                            <p class="p-valor">1.102</p>
+                            <p class="p-text">Escolas cadastradas</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="container-graficos">
+                    <div class="g1">
+                        <div class="grafico1">
+                            <canvas id="g1" class="tamanhoGraficos"></canvas>
+                        </div>
+                        <div class="grafico2">
+                            <canvas id="g2" class="tamanhoGraficos"></canvas>
+                        </div>
+                    </div>
+                    <div class="g2">
+                        <div>
+                            <canvas id="g3" class="tamanhoGraficos"></canvas>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

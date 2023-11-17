@@ -1,0 +1,174 @@
+
+body {
+    margin-top: 0;
+    background-color: #F8F9FB;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #235EE6;
+    padding: .5em;
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+
+.nav .logo {
+    margin: 1em 0 2.5em 0;
+}
+
+.nav .menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.header-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .icon-dash {
+    color: #0D0742;
+    font-weight: bold;
+}
+
+
+header #pesquisa {
+    background-color: #EAECF0;
+    padding: 10px;
+    width: 400px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+header #opcoes {
+    width: 200px;
+    padding: 10px;
+    color: #0D0742;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+.main-content {
+    display: flex;
+    gap: 2em;
+}
+
+.container {
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 1em;
+}
+
+
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 2em;
+    justify-content: space-around;
+}
+
+.dados .box-dados {
+    /* width: 40px;
+    height: 40px; */
+    background-color: #fafafa;
+    box-shadow: 1px 3px 3px #ccc;
+    padding: 1em;
+    border-radius: 16px;
+
+}
+
+.box-dados {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box-dados p {
+    color: #0D0742;
+    font-weight: bold;
+}
+
+.box-dados .p-valor {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.box-dados .p-text{
+    margin: 0;
+}
+
+.box-dados .infos-p {
+    margin-top: 12px;
+}
+
+
+.icons-dados {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-dados .icon-home {
+    width: 30px;
+}
+
+
+.container-graficos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    gap: 2em;
+    width: 100%;
+    padding: 1em;
+}
+
+.container-graficos .g1 {
+    display: flex;
+    gap: 16px;
+}
+
+.container-graficos .g1 div {
+    /* width: 50%; */
+    height: 200px;
+    background-color: #fafafa;
+    box-shadow: 1px 3px 8px #ccc;
+    padding: 2em;
+    border-radius: 16px;
+}
+
+.grafico1 {
+    width: 70%;
+}
+
+.grafico2 {
+    width: 30%;
+}
+
+.container-graficos .g2 div {
+    /* width: 90%; */
+    height: 200px;
+    background-color: #fafafa;
+    box-shadow: 1px 3px 8px #ccc;
+    padding: 2em;
+    border-radius: 16px;
+}
+
+.tamanhoGraficos {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
