@@ -172,3 +172,54 @@ header #opcoes {
     height: 100% !important;
     object-fit: contain;
 }
+
+
+
+
+
+@media (max-width: 960px) {
+    .container-graficos .g1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .grafico1, .grafico2, .grafico3 {
+        width: 90%;
+        padding: 0 !important;
+    }
+
+    header #pesquisa {
+        width: 200px;
+    }
+
+    header #opcoes {
+        width: 100px;
+    }
+
+    .box-dados {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .dados {
+        flex-direction: row;
+    }
+
+    header #pesquisa {
+        width: 150px;
+    }
+
+    header #opcoes {
+        width: 70px;
+    }
+
+    .container-graficos {
+        margin-left: 0;
+    }
+}
