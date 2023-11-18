@@ -1,8 +1,13 @@
-
 body {
     margin-top: 0;
     background-color: #F8F9FB;
     margin: 0;
+}
+
+.container {
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 1em;
 }
 
 .menu-hamburguer {
@@ -20,6 +25,7 @@ body {
     text-align: center;
     margin-left: 1.5em;
     height: 90vh;
+
 }
 
 .nav .logo {
@@ -32,7 +38,7 @@ body {
     gap: 1.5em;
 }
 
-.header-main{
+.header-main {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -60,7 +66,7 @@ header #pesquisa {
     outline: none;
 }
 
-header #opcoes {
+.main-content select {
     width: 200px;
     padding: 10px;
     color: #0D0742;
@@ -72,105 +78,20 @@ header #opcoes {
 .main-content {
     display: flex;
     gap: 2em;
-}
-
-.container {
-    display: flex;
-    font-family: 'Nunito Sans', sans-serif;
-    margin-top: 1em;
-}
-
-.dados {
-    display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-left: 2em;
+    align-items: center;
+}
+
+.main-content .opcoes {
+    display: flex;
+    width: 55%;
     justify-content: space-around;
+    align-items: center;
+    margin: 4em 0 4em;
 }
 
-.dados .box-dados {
-    /* width: 40px;
-    height: 40px; */
-    background-color: #fafafa;
-    box-shadow: 1px 3px 3px #ccc;
-    padding: 1em;
-    border-radius: 16px;
-
-}
-
-.box-dados {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.box-dados p {
-    color: #0D0742;
-    font-weight: bold;
-}
-
-.box-dados .p-valor {
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.box-dados .p-text{
-    margin: 0;
-}
-
-.box-dados .infos-p {
-    margin-top: 12px;
-}
-
-
-.icons-dados {
-    display: flex;
-    justify-content: space-between;
-}
-
-.icons-dados .icon-home {
-    width: 30px;
-}
-
-
-.container-graficos {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2em;
-    gap: 2em;
-    width: 100%;
-    padding: 1em;
-}
-
-.container-graficos .g1 {
-    display: flex;
-    gap: 16px;
-}
-
-.container-graficos .g1 div {
-    /* width: 50%; */
-    height: 200px;
-    background-color: #fafafa;
-    box-shadow: 1px 3px 8px #ccc;
-    padding: 2em;
-    border-radius: 16px;
-}
-
-.grafico1 {
-    width: 70%;
-}
-
-.grafico2 {
-    width: 30%;
-}
-
-.container-graficos .g2 div {
-    /* width: 90%; */
-    height: 200px;
-    background-color: #fafafa;
-    box-shadow: 1px 3px 8px #ccc;
-    padding: 2em;
-    border-radius: 16px;
+.main-content .grafico {
+    width: 60%;
 }
 
 .tamanhoGraficos {
@@ -179,7 +100,13 @@ header #opcoes {
     object-fit: contain;
 }
 
-
+.main-content .grafico {
+    height: 200px;
+    background-color: #fafafa;
+    box-shadow: 1px 3px 8px #ccc;
+    padding: 2em;
+    border-radius: 16px;
+}
 
 footer {
     display: flex;
@@ -195,8 +122,13 @@ footer {
 
 @media (max-width: 960px) {
 
+
     .menu-hamburguer {
         display: block;
+    }
+
+    .main-content .opcoes {
+        width: 80%;
     }
 
     .container-graficos .g1 {
@@ -205,21 +137,8 @@ footer {
         gap: 16px;
     }
 
-    .grafico1, .grafico2, .grafico3 {
-        width: 100%;
-        padding: 0 !important;
-    }
-
     header #pesquisa {
         width: 200px;
-    }
-
-    header #opcoes {
-        width: 100px;
-    }
-
-    .box-dados {
-        padding: 0;
     }
 
     .nav {
@@ -234,9 +153,14 @@ footer {
         justify-content: center;
     }
 
-    .dados {
-        flex-direction: row;
-        margin-left: 0;
+    .main-content .opcoes {
+        flex-direction: column;
+        gap: 1em;
+        margin: 1em 1em;
+    }
+
+    .main-content .grafico {
+        width: 80%;
     }
 
     header {
@@ -249,17 +173,4 @@ footer {
         width: 200px;
     }
 
-    header #opcoes {
-        width: 100px;
-    }
-
-    .container-graficos {
-        margin-left: 0;
-        padding: 0 !important;
-    }
-
-    
-    .box-dados .p-text {
-        font-size: .8em;
-    }
 }

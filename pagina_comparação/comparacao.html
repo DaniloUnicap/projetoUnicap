@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashZada</title>
+    <link rel="stylesheet" href="comparacao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-nav">
+                <div class="logo">Dash.io</div>
+                <div><img src="../icons/inicio.svg" alt=""></div>
+                <div><a href="../index.html"><img src="../icons/dashboard.svg" alt=""></a></div>
+                <div><img src="../icons/comparar.svg" alt=""></div>
+            </div>
+            
+            <div><img src="../icons/config.svg" alt=""></div>
+        </nav>
+
+        <div class="menu-hamburguer">
+            <img src="../icons/menu-ham.svg" alt="">
+        </div>
+
+        <div class="header-main">
+            <header>
+                <div class="icon-dash">
+                    <span>DASHBOARD</span>
+                </div>
+
+                <input type="text" placeholder="Manda a tua ideia noiado" id="pesquisa">
+
+                <div style="width: 100px;"> <!-- apenas para centralizar a barra de busca-->
+                    
+                </div>
+
+            </header>
+
+            <main class="main-content">
+               
+                <div class="opcoes">
+                    <select name="Selecione" id="">
+                        <option value="">Selecione</option>
+                    </select>
+                    <div class="icon-comparacao">
+                        <img src="../icons/compararItens.svg" alt="">
+                    </div>
+                    <select name="Selecione" id="">
+                        <option value="">Selecione</option>
+                    </select>
+                </div>
+
+                <div class="grafico">
+                    <canvas id="g1" class="tamanhoGraficos"></canvas>
+                </div>
+               
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        Footer da tropa
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
